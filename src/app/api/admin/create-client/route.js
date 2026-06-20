@@ -1,5 +1,6 @@
 import { createClient } from '@supabase/supabase-js';
 import { NextResponse } from 'next/server';
+import { createHubSpotContact } from '@/lib/hubspot';
 
 export async function POST(request) {
   const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
@@ -56,5 +57,11 @@ export async function POST(request) {
     return NextResponse.json({ error: dbError.message }, { status: 400 });
   }
 
-  return NextResponse.json({ success: true, userId });
+  // 3. Create HubSpot contact — non-blocking, failure does not abort client creation
+  const hubspot = await createHubSpotContact({ business_name, contact_name, email, phone, plan_name });
+  if (hubspot.error) {
+    console.warn('[create-client] HubSpot contact creation failed:', hubspot.error);
+  }
+
+  return NextResponse.json({ success: true, userId, hubspotId: hubspot.hubspotId ?? null });
 }
