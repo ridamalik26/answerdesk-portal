@@ -1,26 +1,50 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --ink: #0F1B2D;
+  --ink-2: #3D4A5E;
+  --ink-3: #6B7689;
+  --paper: #FAFAF7;
+  --paper-2: #F2F0E8;
+  --surface: #FFFFFF;
+  --line: #E8E4D8;
+  --line-2: #D9D4C3;
+  --accent: #B45309;
+  --accent-soft: #FEF3C7;
+  --accent-ink: #7C2D12;
+  --green: #15803D;
+  --green-soft: #DCFCE7;
+  --amber: #A16207;
+  --amber-soft: #FEF3C7;
+  --red: #B91C1C;
+  --red-soft: #FEE2E2;
+  --blue: #1D4ED8;
+  --blue-soft: #DBEAFE;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html, body {
+  height: 100%;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace !important;
+}
+
+.font-serif-italic {
+  font-family: 'Instrument Serif', serif;
+  font-style: italic;
 }
