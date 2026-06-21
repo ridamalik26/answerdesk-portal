@@ -41,31 +41,28 @@ A full-stack client portal for an answering service business. Clients can log in
 <img src="./assets/ss/login.png" width="700" alt="Login" />
 
 ### Dashboard
-<img src="./assets/ss/dashboard.png" width="700" alt="Dashboard" />
+<img src="./assets/ss/dashborad.png" width="700" alt="Dashboard" />
 
 ### Call Logs
-<img src="./assets/ss/calls.png" width="700" alt="Call Logs" />
+<img src="./assets/ss/calllogs.png" width="700" alt="Call Logs" />
 
 ### Minute Tracker
-<img src="./assets/ss/minutes.png" width="700" alt="Minute Tracker" />
+<img src="./assets/ss/min_tracker.png" width="700" alt="Minute Tracker" />
 
 ### Billing
 <img src="./assets/ss/billing.png" width="700" alt="Billing" />
 
 ### My Account
-<img src="./assets/ss/account.png" width="700" alt="My Account" />
+<img src="./assets/ss/my account.png" width="700" alt="My Account" />
 
 ### Onboarding
-<img src="./assets/ss/onboarding.png" width="700" alt="Onboarding" />
+<img src="./assets/ss/onboard.png" width="700" alt="Onboarding" />
 
 ### Admin — All Clients
-<img src="./assets/ss/admin-clients.png" width="700" alt="Admin Clients" />
+<img src="./assets/ss/admin.png" width="700" alt="Admin Clients" />
 
 ### Admin — Client Detail
-<img src="./assets/ss/admin-client-detail.png" width="700" alt="Admin Client Detail" />
-
-### Admin — Billing Overview
-<img src="./assets/ss/admin-billing.png" width="700" alt="Admin Billing" />
+<img src="./assets/ss/admin_screen2.png" width="700" alt="Admin Client Detail" />
 
 ### HubSpot CRM Sync
 <img src="./assets/ss/hubspot.png" width="700" alt="HubSpot" />
